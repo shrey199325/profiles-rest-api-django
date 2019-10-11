@@ -12,6 +12,6 @@ router.register("feed", views.UserProfileFeedViewSet)
 
 urlpatterns = [
     path("Hello-view/", views.HelloAPIView.as_view()),
-    path("", include(router.urls)),
     path("login/", views.UserLoginAPIView.as_view()),
+    path("", include(router.urls)),
 ]
